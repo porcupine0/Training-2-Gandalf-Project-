@@ -1,0 +1,43 @@
+public class Animals {
+	
+byte legs = 4 ;
+byte head = 1 ;
+boolean hair = true ;
+
+}
+
+public class Cats extends Animals{
+	
+static String voice = "Meow!" ;
+static void Voice (){
+System.out.print (voice + " / ") ;
+}
+}
+
+public class Dogs extends Animals {
+	
+static String voice = "Wuf Wuf!" ;
+static void Voice (){
+System.out.print (voice + " / ") ;
+}
+}
+
+public class Gandalf extends Cats implements TravellingToMordor {
+	
+boolean hair = false ;
+boolean beard = true ;
+static String voice = "Moew!" ;
+public void travellingtomordor() {
+System.out.println("I'm on the road! " + voice);
+}
+}
+
+public interface TravellingToMordor {
+	
+	public void travellingtomordor () ;
+
+}
+
+The outputs are down below ;
+
+Meow! / Wuf Wuf! / I'm on the road! Moew!
